@@ -1,7 +1,10 @@
 <?php
     $barang_id = isset($_GET['kategori_id']) ? $_GET['kategori_id'] : false;
-    $nama_kategori = "";
-    $status_kategori = "";
+    $nama_barang = "";
+    $spesifikasi = "";
+    $stok = "";
+    $harga = "";
+    $file_gambar = "";
     $button = "Add";
     // if ($kategori_id) {
     //     $query = mysqli_query($koneksi, "SELECT * FROM barang where barang_id = '$barang_id'");
@@ -13,7 +16,7 @@
     // }
 ?>
 
-<form action="<?php echo BASE_URL."modules/barang/action.php?barang_id=$barang_id"?>" method="POST">
+<form action="<?php echo BASE_URL."modules/barang/action.php?barang_id=$barang_id"?>" method="POST" enctype="multipart/form-data">
     <div class="element-form">
         <label>Kategori</label>
         <span>
@@ -29,23 +32,23 @@
     </div>
     <div class="element-form">
         <label>Nama Barang</label>
-        <span><input type='text' name='nama-barang'></span>
+        <span><input type='text' name='nama_barang' value="<?php echo $nama_barang; ?>"></span>
     </div>
     <div class="element-form">
         <label>Spesifikasi</label>
-        <span><input type='text' name='spesifikasi'></span>
+        <span><input type='text' name='spesifikasi' value="<?php echo $spesifikasi; ?>"></span>
     </div>
     <div class="element-form">
         <label>Stok</label>
-        <span><input type='text' name='stok'></span>
+        <span><input type='text' name='stok' value="<?php echo $stok; ?>"></span>
     </div>
     <div class="element-form">
         <label>Harga</label>
-        <span><input type='text' name='harga'></span>
+        <span><input type='text' name='harga' value="<?php echo $harga; ?>"></span>
     </div>
     <div class="element-form">
         <label>Gambar Produk</label>
-        <span><input type='file' name='gambar'></span>
+        <span><input type='file' name='gambar' value="<?php echo $file_gambar; ?>"></span>
     </div>
     <div class="element-form">
         <label>Status</label>
