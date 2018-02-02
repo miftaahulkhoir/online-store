@@ -19,13 +19,33 @@
         <span>
             <select>
                 <?php
-                    $sql = mysqli_query($koneksi, "SELECT * FROM kategori WHERE status='on'");
+                    $sql = mysqli_query($koneksi, "SELECT kategori_id, kategori FROM kategori WHERE status='on' group by kategori ASC");
                     while ($row = mysqli_fetch_assoc($sql)) {
                         echo "<option value='$row[kategori_id]'>$row[kategori]</option>";
                     }
                 ?>
             </select>
         </span>
+    </div>
+    <div class="element-form">
+        <label>Nama Barang</label>
+        <span><input type='text' name='nama-barang'></span>
+    </div>
+    <div class="element-form">
+        <label>Spesifikasi</label>
+        <span><input type='text' name='spesifikasi'></span>
+    </div>
+    <div class="element-form">
+        <label>Stok</label>
+        <span><input type='text' name='stok'></span>
+    </div>
+    <div class="element-form">
+        <label>Harga</label>
+        <span><input type='text' name='harga'></span>
+    </div>
+    <div class="element-form">
+        <label>Gambar Produk</label>
+        <span><input type='file' name='gambar'></span>
     </div>
     <div class="element-form">
         <label>Status</label>
