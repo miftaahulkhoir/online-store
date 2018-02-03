@@ -168,6 +168,10 @@ body {
     text-align:  center;
 }
 
+.kolom-nomor {
+    text-align: center;
+}
+
 .kiri {
     text-align:  left;
 }
@@ -178,4 +182,22 @@ body {
 
 .kanan {
     text-align: right;
+}
+
+
+#frame-tambah {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+#frame-tambah .tombol-action {
+    background: #1e5474;
+    text-decoration: none;
+    color: white;
+    padding: 7px 5px;
+    border-radius: 3px;
+}
+
+#frame-tambah .tombol-action:hover {
+    background: orange;
 }

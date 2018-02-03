@@ -6,6 +6,7 @@
     $harga = "";
     $file_gambar = "";
     $button = "Add";
+    $status_barang = "";
     // if ($kategori_id) {
     //     $query = mysqli_query($koneksi, "SELECT * FROM barang where barang_id = '$barang_id'");
     //     $row = mysqli_fetch_assoc($query);
@@ -20,7 +21,7 @@
     <div class="element-form">
         <label>Kategori</label>
         <span>
-            <select>
+            <select name="kategori_id">
                 <?php
                     $sql = mysqli_query($koneksi, "SELECT kategori_id, kategori FROM kategori WHERE status='on' group by kategori ASC");
                     while ($row = mysqli_fetch_assoc($sql)) {
@@ -49,6 +50,13 @@
     <div class="element-form">
         <label>Gambar Produk</label>
         <span><input type='file' name='gambar' value="<?php echo $file_gambar; ?>"></span>
+    </div>
+    <div class="element-form">
+        <label>Status</label>
+        <span>
+            <input type="radio" name="status" value="on" <?php if ($status_barang == 'on') {echo "checked='true'";} ?>>On
+            <input type="radio" name="status" value="off" <?php if ($status_barang == 'off') {echo "checked='true'";} ?>>Off
+        </span>
     </div>
     <div class="element-form">
         <span><input type="submit" name="button" value="<?php echo $button; ?>"></span>
