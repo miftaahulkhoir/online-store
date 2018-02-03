@@ -51,13 +51,6 @@
         <span><input type='file' name='gambar' value="<?php echo $file_gambar; ?>"></span>
     </div>
     <div class="element-form">
-        <label>Status</label>
-        <span>
-            <input type="radio" name="status" value="on" <?php if ($status_kategori == 'on') {echo "checked='true'";} ?>>On
-            <input type="radio" name="status" value="off" <?php if ($status_kategori == 'off') {echo "checked='true'";} ?>>Off
-        </span>
-    </div>
-    <div class="element-form">
         <span><input type="submit" name="button" value="<?php echo $button; ?>"></span>
     </div>
 </form>
