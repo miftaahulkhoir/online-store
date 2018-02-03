@@ -36,7 +36,7 @@
     </div>
     <div class="element-form">
         <label>Spesifikasi</label>
-        <span><input type='text' name='spesifikasi' value="<?php echo $spesifikasi; ?>"></span>
+        <span><textarea name='spesifikasi'><?php echo $spesifikasi; ?></textarea></span>
     </div>
     <div class="element-form">
         <label>Stok</label>
