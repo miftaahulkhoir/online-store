@@ -8,7 +8,7 @@
     $file_gambar = "";
     $button = "Add";
     $status_barang = "";
-
+    $gambar = "";
     if ($barang_id) {
         $query = mysqli_query($koneksi, "SELECT * FROM barang where barang_id = '$barang_id'");
         $row = mysqli_fetch_assoc($query);
@@ -26,7 +26,6 @@
     }
 ?>
 
-<script src="<?php echo BASE_URL.'js/ckeditor/ckeditor.js' ?>"></script>
 
 <form action="<?php echo BASE_URL."modules/barang/action.php?barang_id=$barang_id"?>" method="POST" enctype="multipart/form-data">
     <div class="element-form">
@@ -49,9 +48,9 @@
         <label>Nama Barang</label>
         <span><input type='text' name='nama_barang' value="<?php echo $nama_barang; ?>"></span>
     </div>
-    <div>
+    <div class="element-form">
         <label>Spesifikasi</label>
-        <span><textarea name='spesifikasi' id='editor'><?php echo $spesifikasi; ?></textarea></span>
+        <span><textarea name='spesifikasi'><?php echo $spesifikasi; ?></textarea></span>
     </div>
     <div class="element-form">
         <label>Stok</label>
@@ -79,6 +78,6 @@
     </div>
 </form>
 
-<script>
+<!-- <script>
     CKEDITOR.replace('editor');
-</script>
+</script> -->
