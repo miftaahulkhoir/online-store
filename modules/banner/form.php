@@ -25,7 +25,7 @@
     }   
 ?>
 
-<form action="<?php echo BASE_URL."module/banner/action.php?banner_id=$banner_id"?>" method="post" enctype="multipart/form-data">
+<form action="<?php echo BASE_URL."modules/banner/action.php?banner_id=$banner_id"?>" method="post" enctype="multipart/form-data">
 	
 	<div class="element-form">
 		<label>Banner</label>	
