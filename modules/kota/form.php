@@ -19,7 +19,7 @@
 	}
 		
 ?>		
-<form action="<?php echo BASE_URL."module/kota/action.php?kota_id=$kota_id"?>" method="post">
+<form action="<?php echo BASE_URL."modules/kota/action.php?kota_id=$kota_id"?>" method="post">
 
 	<div class="element-form">
 		<label>Kota</label>	
