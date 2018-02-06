@@ -22,7 +22,7 @@
 				 
 			$no = 1;
 			while($rowKota=mysqli_fetch_assoc($queryKota)){
-				echo "<tr>
+				echo "<tr class='baris-isi'>
 						<td class='kolom-nomor'>$no</td>
 						<td>$rowKota[kota]</td>
 						<td>".rupiah($rowKota['tarif'])."</td>

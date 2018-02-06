@@ -23,7 +23,7 @@
   
             while($rowUser=mysqli_fetch_array($queryAdmin))
             {
-                echo "<tr>
+                echo "<tr class='baris-isi'>
                         <td class='kolom-nomor'>$no</td>
                         <td>$rowUser[nama]</td>
                         <td>$rowUser[email]</td>

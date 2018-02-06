@@ -201,12 +201,15 @@ body {
 
 .tombol-action {
     background: #1e5474;
-    text-decoration: none;
     color: white;
-    padding: 7px 5px;
+    padding: 7px 15px;
     border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 3px;
+    font-size: 9px;
 }
 
-#frame-tambah .tombol-action:hover {
+.tombol-action:hover {
     background: orange;
 }

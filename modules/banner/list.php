@@ -25,7 +25,7 @@
     
             while($rowBanner=mysqli_fetch_array($queryBanner))
             {
-                echo "<tr>
+                echo "<tr class='baris-isi'>
                         <td class='kolom-nomor'>$no</td>
                         <td>$rowBanner[banner]</td>
                         <td><a target='blank' href='".BASE_URL."$rowBanner[link]'>$rowBanner[link]</a></td>
