@@ -168,6 +168,10 @@ body {
     text-align:  center;
 }
 
+.baris-isi {
+    height: 30px;
+}
+
 .kolom-nomor {
     text-align: center;
 }
@@ -195,7 +199,7 @@ body {
     margin-bottom: 15px;
 }
 
-#frame-tambah .tombol-action {
+.tombol-action {
     background: #1e5474;
     text-decoration: none;
     color: white;
