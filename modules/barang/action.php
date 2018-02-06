@@ -34,19 +34,6 @@
         status='$status_barang'
         $upload_gambar WHERE barang_id='$barang_id'");
     }
-
-    // else if($button == "Update"){
-	// 	$barang_id = $_GET['barang_id'];
-		
-	// 	mysqli_query($koneksi, "UPDATE barang SET kategori_id='$kategori_id',
-	// 											  nama_barang='$nama_barang',
-	// 											  spesifikasi='$spesifikasi',
-	// 											  harga='$harga',
-	// 											  stok='$stok',
-	// 											  status='$status_barang',
-	// 											  $upload_gambar WHERE barang_id='$barang_id'");
-    // }
-    
     header("Location:".BASE_URL."index.php?page=my_profile&module=barang&action=list");
 
     ?>
