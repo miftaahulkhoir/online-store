@@ -184,6 +184,11 @@ body {
     text-align: right;
 }
 
+.status {
+    text-transform:capitalize;
+    text-align: center;
+}
+
 
 #frame-tambah {
     text-align: right;

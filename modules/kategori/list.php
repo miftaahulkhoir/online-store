@@ -21,7 +21,7 @@
             echo "<tr>
                     <td class='kolom-nomor'>$no</td>
                     <td class='kiri'>$row[kategori]</td>
-                    <td class='tengah'>$row[status]</td>
+                    <td class='status'>$row[status]</td>
                     <td class='tengah'><a href='".BASE_URL."index.php?page=my_profile&module=kategori&action=form&kategori_id=$row[kategori_id]'>Edit</a> </td>
 </tr>";
         $no++;
